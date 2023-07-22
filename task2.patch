@@ -1,0 +1,340 @@
+diff --git a/package-lock.json b/package-lock.json
+index 21b4315..4f370dc 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -12,10 +12,10 @@
+         "@finos/perspective-viewer": "^1.6.2",
+         "@finos/perspective-viewer-d3fc": "^1.6.2",
+         "@finos/perspective-viewer-datagrid": "^1.6.2",
+-        "@types/jest": "^23.3.13",
+-        "@types/node": "^10.12.19",
+-        "@types/react": "^16.9.0",
+-        "@types/react-dom": "^16.0.11",
++        "@types/jest": "^23.3.14",
++        "@types/node": "^10.17.60",
++        "@types/react": "^16.14.43",
++        "@types/react-dom": "^16.9.19",
+         "bootstrap": "^4.2.1",
+         "puppeteer": "^1.19.0",
+         "react": "^16.9.0",
+@@ -25,7 +25,7 @@
+       "devDependencies": {
+         "awesome-typescript-loader": "^5.2.1",
+         "source-map-loader": "^0.2.4",
+-        "typescript": "^3.2.4"
++        "typescript": "^3.9.10"
+       }
+     },
+     "node_modules/@ampproject/remapping": {
+@@ -2309,9 +2309,9 @@
+       "integrity": "sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ=="
+     },
+     "node_modules/@types/react": {
+-      "version": "16.14.29",
+-      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.14.29.tgz",
+-      "integrity": "sha512-I5IwEaefGZbpmmK1J7zHwZe3JkGxcRkc5WJUDWmNySVVovueViRTEUWV7spTvpe96l3nbKD/K6+GxoN69CYb/w==",
++      "version": "16.14.43",
++      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.14.43.tgz",
++      "integrity": "sha512-7zdjv7jvoLLQg1tTvpQsm+hyNUMT2mPlNV1+d0I8fbGhkJl82spopMyBlu4wb1dviZAxpGdk5eHu/muacknnfw==",
+       "dependencies": {
+         "@types/prop-types": "*",
+         "@types/scheduler": "*",
+@@ -2319,9 +2319,9 @@
+       }
+     },
+     "node_modules/@types/react-dom": {
+-      "version": "16.9.16",
+-      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.16.tgz",
+-      "integrity": "sha512-Oqc0RY4fggGA3ltEgyPLc3IV9T73IGoWjkONbsyJ3ZBn+UPPCYpU2ec0i3cEbJuEdZtkqcCF2l1zf2pBdgUGSg==",
++      "version": "16.9.19",
++      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.19.tgz",
++      "integrity": "sha512-xC8D280Bf6p0zguJ8g62jcEOKZiUbx9sIe6O3tT/lKfR87A7A6g65q13z6D5QUMIa/6yFPkNhqjF5z/VVZEYqQ==",
+       "dependencies": {
+         "@types/react": "^16"
+       }
+@@ -21951,9 +21951,9 @@
+       "integrity": "sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ=="
+     },
+     "@types/react": {
+-      "version": "16.14.29",
+-      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.14.29.tgz",
+-      "integrity": "sha512-I5IwEaefGZbpmmK1J7zHwZe3JkGxcRkc5WJUDWmNySVVovueViRTEUWV7spTvpe96l3nbKD/K6+GxoN69CYb/w==",
++      "version": "16.14.43",
++      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.14.43.tgz",
++      "integrity": "sha512-7zdjv7jvoLLQg1tTvpQsm+hyNUMT2mPlNV1+d0I8fbGhkJl82spopMyBlu4wb1dviZAxpGdk5eHu/muacknnfw==",
+       "requires": {
+         "@types/prop-types": "*",
+         "@types/scheduler": "*",
+@@ -21961,9 +21961,9 @@
+       }
+     },
+     "@types/react-dom": {
+-      "version": "16.9.16",
+-      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.16.tgz",
+-      "integrity": "sha512-Oqc0RY4fggGA3ltEgyPLc3IV9T73IGoWjkONbsyJ3ZBn+UPPCYpU2ec0i3cEbJuEdZtkqcCF2l1zf2pBdgUGSg==",
++      "version": "16.9.19",
++      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.19.tgz",
++      "integrity": "sha512-xC8D280Bf6p0zguJ8g62jcEOKZiUbx9sIe6O3tT/lKfR87A7A6g65q13z6D5QUMIa/6yFPkNhqjF5z/VVZEYqQ==",
+       "requires": {
+         "@types/react": "^16"
+       }
+diff --git a/package.json b/package.json
+index ca234e9..207ae7b 100644
+--- a/package.json
++++ b/package.json
+@@ -7,10 +7,10 @@
+     "@finos/perspective-viewer": "^1.6.2",
+     "@finos/perspective-viewer-d3fc": "^1.6.2",
+     "@finos/perspective-viewer-datagrid": "^1.6.2",
+-    "@types/jest": "^23.3.13",
+-    "@types/node": "^10.12.19",
+-    "@types/react": "^16.9.0",
+-    "@types/react-dom": "^16.0.11",
++    "@types/jest": "^23.3.14",
++    "@types/node": "^10.17.60",
++    "@types/react": "^16.14.43",
++    "@types/react-dom": "^16.9.19",
+     "bootstrap": "^4.2.1",
+     "puppeteer": "^1.19.0",
+     "react": "^16.9.0",
+@@ -35,6 +35,6 @@
+   "devDependencies": {
+     "awesome-typescript-loader": "^5.2.1",
+     "source-map-loader": "^0.2.4",
+-    "typescript": "^3.2.4"
++    "typescript": "^3.9.10"
+   }
+ }
+diff --git a/src/App.tsx b/src/App.tsx
+index 0728518..615e470 100755
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -1,13 +1,15 @@
+-import React, { Component } from 'react';
+-import DataStreamer, { ServerRespond } from './DataStreamer';
+-import Graph from './Graph';
+-import './App.css';
++import React, { Component } from "react";
++import DataStreamer, { ServerRespond } from "./DataStreamer";
++import Graph from "./Graph";
++import "./App.css";
++import { ServerResponse } from "http";
+ 
+ /**
+  * State declaration for <App />
+  */
+ interface IState {
+-  data: ServerRespond[],
++  data: ServerRespond[];
++  showGraph: boolean;
+ }
+ 
+ /**
+@@ -22,6 +24,7 @@ class App extends Component<{}, IState> {
+       // data saves the server responds.
+       // We use this state to parse data down to the child element (Graph) as element property
+       data: [],
++      showGraph: false,
+     };
+   }
+ 
+@@ -29,18 +32,28 @@ class App extends Component<{}, IState> {
+    * Render Graph react component with state.data parse as property data
+    */
+   renderGraph() {
+-    return (<Graph data={this.state.data}/>)
++    if (this.state.showGraph) {
++      return <Graph data={this.state.data} />;
++    }
+   }
+ 
+   /**
+    * Get new data from server and update the state with the new data
+    */
+   getDataFromServer() {
+-    DataStreamer.getData((serverResponds: ServerRespond[]) => {
+-      // Update the state by creating a new array of data that consists of
+-      // Previous data in the state and the new data from server
+-      this.setState({ data: [...this.state.data, ...serverResponds] });
+-    });
++    let x = 0;
++    const interval = setInterval(() => {
++      DataStreamer.getData((serverResponse: ServerRespond[]) => {
++        this.setState({
++          data: serverResponse,
++          showGraph: true,
++        });
++      });
++      x++;
++      if (x > 1000) {
++        clearInterval(interval);
++      }
++    }, 100);
+   }
+ 
+   /**
+@@ -49,25 +62,25 @@ class App extends Component<{}, IState> {
+   render() {
+     return (
+       <div className="App">
+-        <header className="App-header">
+-          Bank & Merge Co Task 2
+-        </header>
++        <header className="App-header">Bank & Merge Co Task 2</header>
+         <div className="App-content">
+-          <button className="btn btn-primary Stream-button"
++          <button
++            className="btn btn-primary Stream-button"
+             // when button is click, our react app tries to request
+             // new data from the server.
+             // As part of your task, update the getDataFromServer() function
+             // to keep requesting the data every 100ms until the app is closed
+             // or the server does not return anymore data.
+-            onClick={() => {this.getDataFromServer()}}>
++            onClick={() => {
++              this.getDataFromServer();
++            }}
++          >
+             Start Streaming Data
+           </button>
+-          <div className="Graph">
+-            {this.renderGraph()}
+-          </div>
++          <div className="Graph">{this.renderGraph()}</div>
+         </div>
+       </div>
+-    )
++    );
+   }
+ }
+ 
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index 3b2a7da..16cd091 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -1,21 +1,21 @@
+-import React, { Component } from 'react';
+-import { Table } from '@finos/perspective';
+-import { ServerRespond } from './DataStreamer';
+-import './Graph.css';
++import React, { Component } from "react";
++import { Table } from "@finos/perspective";
++import { ServerRespond } from "./DataStreamer";
++import "./Graph.css";
+ 
+ /**
+  * Props declaration for <Graph />
+  */
+ interface IProps {
+-  data: ServerRespond[],
++  data: ServerRespond[];
+ }
+ 
+ /**
+  * Perspective library adds load to HTMLElement prototype.
+  * This interface acts as a wrapper for Typescript compiler.
+  */
+-interface PerspectiveViewerElement {
+-  load: (table: Table) => void,
++interface PerspectiveViewerElement extends HTMLElement {
++  load: (table: Table) => void;
+ }
+ 
+ /**
+@@ -27,18 +27,20 @@ class Graph extends Component<IProps, {}> {
+   table: Table | undefined;
+ 
+   render() {
+-    return React.createElement('perspective-viewer');
++    return React.createElement("perspective-viewer");
+   }
+ 
+   componentDidMount() {
+     // Get element to attach the table from the DOM.
+-    const elem: PerspectiveViewerElement = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
++    const elem = (document.getElementsByTagName(
++      "perspective-viewer"
++    )[0] as unknown) as PerspectiveViewerElement;
+ 
+     const schema = {
+-      stock: 'string',
+-      top_ask_price: 'float',
+-      top_bid_price: 'float',
+-      timestamp: 'date',
++      stock: "string",
++      top_ask_price: "float",
++      top_bid_price: "float",
++      timestamp: "date",
+     };
+ 
+     if (window.perspective && window.perspective.worker()) {
+@@ -49,6 +51,14 @@ class Graph extends Component<IProps, {}> {
+ 
+       // Add more Perspective configurations here.
+       elem.load(this.table);
++      elem.setAttribute("view", "y_line");
++      elem.setAttribute("column-pivots", '["stock"]');
++      elem.setAttribute("row-pivots", '["timestamp"]');
++      elem.setAttribute("columns", '["top_ask_price]');
++      elem.setAttribute(
++        "aggregates",
++        '{"stock":"distinct count","top_ask_price":"avg", "top_bid_price":"avg","timestamp":"distinct count"}'
++      );
+     }
+   }
+ 
+@@ -57,15 +67,17 @@ class Graph extends Component<IProps, {}> {
+     if (this.table) {
+       // As part of the task, you need to fix the way we update the data props to
+       // avoid inserting duplicated entries into Perspective table again.
+-      this.table.update(this.props.data.map((el: any) => {
+-        // Format the data from ServerRespond to the schema
+-        return {
+-          stock: el.stock,
+-          top_ask_price: el.top_ask && el.top_ask.price || 0,
+-          top_bid_price: el.top_bid && el.top_bid.price || 0,
+-          timestamp: el.timestamp,
+-        };
+-      }));
++      this.table.update(
++        this.props.data.map((el: any) => {
++          // Format the data from ServerRespond to the schema
++          return {
++            stock: el.stock,
++            top_ask_price: (el.top_ask && el.top_ask.price) || 0,
++            top_bid_price: (el.top_bid && el.top_bid.price) || 0,
++            timestamp: el.timestamp,
++          };
++        })
++      );
+     }
+   }
+ }
+diff --git a/src/index.tsx b/src/index.tsx
+index 6e7a3f1..41c323e 100755
+--- a/src/index.tsx
++++ b/src/index.tsx
+@@ -1,14 +1,16 @@
+-import React from 'react';
+-import ReactDOM from 'react-dom';
+-import App from './App';
+-import './index.css';
+-import 'bootstrap/dist/css/bootstrap.css';
++import React from "react";
++import ReactDOM from "react-dom";
++import App from "./App";
++import "./index.css";
++import "bootstrap/dist/css/bootstrap.css";
+ 
+ declare global {
+-  interface Window { perspective: any; }
++  interface Window {
++    perspective: any;
++  }
+ }
+ 
+ /**
+  * React App attaches the DOM to the DOM element #root in public/index.html
+  */
+-ReactDOM.render(<App />, document.getElementById('root'));
++ReactDOM.render(<App />, document.getElementById("root"));
